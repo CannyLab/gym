@@ -261,6 +261,13 @@ register(
 )
 
 register(
+    id='SparseHalfCheetah-v3',
+    entry_point='gym.envs.mujoco.sparse_half_cheetah_v3:HalfCheetahEnv',
+    max_episode_steps=1000,
+    reward_threshold=4800.0,
+)
+
+register(
     id='Hopper-v2',
     entry_point='gym.envs.mujoco:HopperEnv',
     max_episode_steps=1000,
